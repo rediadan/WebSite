@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ream - 게임 개발팀</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #333;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .projects, .team {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .projects h2, .team h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .member-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .member-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .member-card h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .member-card .sns-links a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .contact {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #eee;
+        }
+
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* 간단한 동적 효과 (CSS 애니메이션) */
+        .project-card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .member-card:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ream</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#team">팀원</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Ream: 열정으로 만들어가는 새로운 게임 세상</h2>
+        <p>우리는 혁신적인 아이디어와 뛰어난 기술력으로 잊을 수 없는 게임 경험을 선사하는 것을 목표로 합니다.</p>
+        <button>프로젝트 둘러보기</button>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>주요 프로젝트</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>프로젝트 1</h3>
+                <p>현재 개발 중인 흥미로운 컨셉의 게임입니다. 독특한 게임 시스템과 매력적인 스토리를 특징으로 합니다.</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="project-card">
+                <h3>프로젝트 2 (구상 중)</h3>
+                <p>새로운 아이디어를 기반으로 기획 중인 프로젝트입니다. 혁신적인 게임플레이를 목표로 하고 있습니다.</p>
+                <a href="#">Coming Soon</a>
+            </div>
+            </div>
+    </section>
+
+    <section id="team" class="team">
+        <h2>팀원 소개</h2>
+        <div class="team-members">
+            <div class="member-card">
+                <img src="김동규_사진.jpg" alt="김동규">
+                <h4>김동규</h4>
+                <p>프로그래머</p>
+                <div class="sns-links">
+                    <a href="#" target="_blank">🔗</a> </div>
+            </div>
+            <div class="member-card">
+                <img src="심진완_사진.jpg" alt="심진완">
+                <h4>심진완</h4>
+                <p>일러스트레이터</p>
+                <div class="sns-links">
+                    <a href="#" target="_blank">🔗</a> </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>연락처</h2>
+        <p>저희 팀에 대해 더 궁금하신 점이나 협업 문의가 있으시면 아래 연락처로 언제든지 편하게 연락 주세요.</p>
+        <p>이메일: contact@ream.com</p>
+        </section>
+
+    <footer>
+        <p>© 2025 Ream. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 간단한 동적 효과를 위한 JavaScript (선택 사항)
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 5px 10px rgba(0, 0, 0, 0.2)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
+</body>
+</html>
